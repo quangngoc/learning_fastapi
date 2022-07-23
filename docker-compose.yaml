@@ -6,5 +6,8 @@ services:
       dockerfile: Dockerfile
     volumes:
       - ./src:/app
+      - sqlite:/app/sqlite
     ports:
       - 8000:80
+volumes:
+  sqlite:
